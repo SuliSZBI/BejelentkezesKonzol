@@ -34,6 +34,7 @@ namespace BejelentkezesWinForm
             this.RegLink = new System.Windows.Forms.LinkLabel();
             this.label3 = new System.Windows.Forms.Label();
             this.LoginLink = new System.Windows.Forms.LinkLabel();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -96,12 +97,24 @@ namespace BejelentkezesWinForm
             this.LoginLink.Visible = false;
             this.LoginLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LoginLink_LinkClicked);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Ink Free", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(217, 298);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(414, 36);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Ez most már a hivatalos oldal!";
+            this.label4.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.LoginLink);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.RegLink);
@@ -123,6 +136,7 @@ namespace BejelentkezesWinForm
         private System.Windows.Forms.LinkLabel RegLink;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel LoginLink;
+        private System.Windows.Forms.Label label4;
     }
 }
 

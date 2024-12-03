@@ -22,20 +22,13 @@ namespace BejelentkezesWinForm
         {
             InitializeComponent();
 
-            if (Belepett)
-            {
-                label2.Visible = true;
-                label3.Visible = true;
-                RegLink.Visible = true;
-                LoginLink.Visible = true;
-            }
-            else
-            {
-                label2.Visible = false;
-                label3.Visible = false;
-                RegLink.Visible = false;
-                LoginLink.Visible = false;
-            }
+        }
+
+        public Form1(bool ertek)
+        {
+            InitializeComponent();
+
+            Belepett = ertek;
         }
 
         private void RegLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -71,6 +64,7 @@ namespace BejelentkezesWinForm
                 label3.Visible = true;
                 RegLink.Visible = true;
                 LoginLink.Visible = true;
+                label4.Visible = false;
             }
             else
             {
@@ -78,6 +72,7 @@ namespace BejelentkezesWinForm
                 label3.Visible = false;
                 RegLink.Visible = false;
                 LoginLink.Visible = false;
+                label4.Visible = true;
             }
         }
     }

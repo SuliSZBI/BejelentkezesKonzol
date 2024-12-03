@@ -66,7 +66,7 @@ namespace BejelentkezesWinForm
 
         public void UrlapNyitForm1()
         {
-            Application.Run(new Form1());
+            Application.Run(new Form1(false));
         }
     }
 }
